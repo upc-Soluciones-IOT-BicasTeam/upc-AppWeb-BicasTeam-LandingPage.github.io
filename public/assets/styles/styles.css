@@ -52,6 +52,12 @@ a.btn {
     transform: translateY(5px);
 }
 
+/*Section Common Styles*/
+section{
+    padding-left: 0rem;
+    margin-left: 0rem;
+}
+
 /*Header styles*/
 #header.navbar .container-fluid
 {
@@ -121,11 +127,77 @@ a.btn {
     width: 50px;
     height: 25px;
     transition: 0.3s;
-/*Section Common Styles*/
-section{
-    padding-left: 0rem;
-    margin-left: 0rem;
 }
+/* hero section */
+@media (max-width: 992px) {
+    .order-1 {
+        order: 2;
+    }
+    .order-2 {
+        order: 1;
+    }
+}
+
+
+
+
+#hero{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+#hero .container .card-group #card-center .card-body{
+    background-color: #DFE5EF;
+    color: rgb(27, 23, 23);
+}
+#hero .container .card-group .card-body{
+    background-color:#000000;
+    color: #f5f5f5;
+}
+#hero #home .row button{
+    background-color: #0D6EFD;
+}
+#hero span{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+#hero .callTo-Buttons{
+    cursor: pointer;
+}
+
+
+/* Estilo para aumentar el tamaño de las imágenes en la sección del héroe */
+#hero .callTo-Buttons {
+    width: 200px; /* Ancho deseado */
+    height: 200px; /* Mantener la proporción de aspecto original */
+}
+
+
+#hero .callTo-Buttons-container {
+    margin-top: 20px; 
+}
+
+
+#hero .order-lg-2{
+    width: 50%;
+    height: 100%;
+
+
+
+}
+
+#hero .my-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    margin: -50px 20px 0px 0px;
+
+
+  
+}
+
+
+
 
 /*AboutUs styles*/
 #Us .embed-responsive {
@@ -147,6 +219,66 @@ section{
 #Us .container .row ul li span::after{
     padding-left: 1rem;
 }
+/*AboutTheTeam styles*/
+
+#about-team .container .row .team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+#about-team .container .row .team-member .social-icons a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+#about-team .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+}
+
+
+.team-member {
+    background-color: white;
+    width: 180px;
+    margin: 100px;
+
+}
+
+
+
+
+#Us iframe {
+
+}
+
+/*Services styles*/
+
 #services .row {
     margin-top: 5rem;
 }
@@ -248,6 +380,10 @@ section{
     height: auto;
 
 }
+
+/*Pricing styles*/
+
+
 #pricing .container{
     margin-top: 4rem;
 }
@@ -287,6 +423,7 @@ section{
 #contact-Us #EnterMessage{
     color: var(--body);/*si se altera esta linea, se altera la linea 372,379,387*/
 }
+
 /*Footer styles*/
 #footer{
     padding-top: 5rem;
