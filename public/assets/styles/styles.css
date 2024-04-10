@@ -1,0 +1,93 @@
+/*General Fonts Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');/*colocamos el estilo de letra*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');/*colocamos los iconos*/
+/*General Common Styles*/
+:root {
+    --primary: rgb(88, 252, 209);
+    --secondary: rgb(12, 238, 178);
+    --dark: rgb(33, 37, 47);
+    --body: rgb(136, 136, 136);
+    --white: rgb(246, 240, 240);/*si se altera esta linea, se altera la linea 46*/
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font: normal 16px sans-serif;
+    color: #07dffd;
+    scroll-behavior: smooth !important;
+}
+
+ul, nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {
+    opacity: 1;
+}
+a.btn {
+    color: rgb(5, 248, 183);
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #f31d4d;
+    font-weight: 800;
+    text-align: center;
+}
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color:#DFE5EF ;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/*Section Common Styles*/
+section{
+    padding-left: 0rem;
+    margin-left: 0rem;
+}
+/*Footer styles*/
+#footer{
+    padding-top: 5rem;
+}
+#footer .footer-top {
+    color:var(--body);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: var(--dark);
+}
+
+#footer .footer-top a {
+    color: var(--body);
+}
+
+#footer .footer-top a:hover {
+    color: var(--white);
+}
+
+#footer .footer-bottom {
+    color:var(--body);
+    background-color: rgba(33, 37, 47, 0.97);
+}
+#footer .logo-foot {
+    width: 15%;
+}
+#footer .App-name{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#footer .social-icons a{
+    padding-left: 1rem;
+}
