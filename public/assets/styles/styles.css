@@ -147,3 +147,104 @@ section{
 #Us .container .row ul li span::after{
     padding-left: 1rem;
 }
+#services .row {
+    margin-top: 5rem;
+}
+#services .container{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#services h5{
+    text-transform: uppercase;
+    size-adjust: auto;
+    color: rgb(136, 136, 136);
+}
+#services p{
+    color: rgb(136, 136, 136);
+}
+
+#services li{
+    color: rgb(136, 136, 136);
+}
+#services .texts{
+    justify-content: flex-start;
+
+}
+#services .texts h4{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+#services .texts h1{
+    font-weight: 500;
+}
+#services .texts p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(234, 12, 12);
+    font-size: 16px;
+    padding: 3rem 1rem 3rem 1rem;
+    max-width: 330px;
+    text-transform: uppercase;
+}
+#services span{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+#services .texts .callTo-Buttons{
+    height: 100%;
+    width: 100%;
+}
+#services .image-app{
+    justify-content: flex-end;
+}
+#services .routes{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: #DFE5EF;
+}
+#services .maintain{
+    background-color: #DFE5EF;
+}
+#services .image-left{
+    margin: 2rem;
+}
+#services .container-texts{
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    height:400px;
+}
+#services .container-texts h5{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+#services .container-texts h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+#services .container-texts p{
+    font-size: 20px;
+}
+#services ul{
+    padding-top: 1rem;
+    list-style: none;
+}
+#services li i{
+    color: #757575;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+#services .calls .container .container-texts{
+    width: 500px;
+}
+#services .calls .container .image-calls img{
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+
+}
