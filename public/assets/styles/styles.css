@@ -129,71 +129,160 @@ section{
     transition: 0.3s;
 }
 /* hero section */
-@media (max-width: 992px) {
-    .order-1 {
-        order: 2;
-    }
-    .order-2 {
-        order: 1;
-    }
-}
+/* Botón Google Play */
 
-
-
-
-#hero{
-    background-color: rgb(255, 255, 255);
+/* Ajustes generales de Hero */
+#hero {
+    background-color: #faf8f8;
     font-family: 'Poppins', sans-serif;
 }
-#hero .container .card-group #card-center .card-body{
-    background-color: #DFE5EF;
-    color: rgb(27, 23, 23);
-}
-#hero .container .card-group .card-body{
-    background-color:#000000;
-    color: #f5f5f5;
-}
-#hero #home .row button{
-    background-color: #0D6EFD;
-}
-#hero span{
-    display: flex;
-    width: 200px;
-    height: 50px;
-}
-#hero .callTo-Buttons{
-    cursor: pointer;
+
+#hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
+#hero p {
+    font-size: 1rem;
+    color: #6c757d;
+}
 
+#hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+/* Ajuste específico para pantallas pequeñas */
+@media (max-width: 576px) {
+    #hero .callTo-Buttons {
+        max-width: 150px; /* Tamaño más grande para garantizar visibilidad */
+    }
+}
 /* Estilo para aumentar el tamaño de las imágenes en la sección del héroe */
+
+
 #hero .callTo-Buttons {
-    width: 200px; /* Ancho deseado */
-    height: 200px; /* Mantener la proporción de aspecto original */
+    max-width: 200px; /* Establece un tamaño adecuado para dispositivos grandes */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+#hero .callTo-Buttons:hover {
+    transform: scale(1.05); /* Ampliación suave al pasar el mouse */
+}
+
+#hero .btn-primary {
+    max-width: 200px; /* Establece un tamaño adecuado para dispositivos grandes */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+
+    border-radius: 10px; /* Bordes redondeados */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #fdd007;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    background-color: #03030e;
+    transform: scale(1.05); /* Amplía ligeramente al pasar el mouse */
 }
 
 
-#hero .callTo-Buttons-container {
-    margin-top: 20px; 
+
+
+
+.card {
+    background-color: #f8f9fa; /* Cambia el color de fondo */
+    border: 1px solid #ddd; /* Cambia el color del borde */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.card:hover {
+    background-color: #e0f7fa; /* Cambia el color de fondo al pasar el mouse */
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+.card-title {
+    color: #0e0e16; /* Color del título */
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #546e7a; /* Color del texto */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.bi-arrow-right {
+    color: #F0F0F0; /* Cambia el color del ícono */
+    transition: transform 0.3s ease;
+}
+
+.card:hover .bi-arrow-right {
+    transform: translateX(5px); /* Efecto de movimiento del ícono */
 }
 
 
-#hero .order-lg-2{
-    width: 50%;
-    height: 100%;
+
+/* Media Queries para dispositivos */
+@media (max-width: 992px) {
+    /* Navbar */
+    #header .navbar-nav {
+        flex-direction: column;
+    }
+    #header .navbar-brand img {
+        margin-bottom: 10px;
+    }
+    #header .nav-item {
+        margin-bottom: 5px;
+    }
 
 
+    /* Cards */
+    .card-group {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    /* Services Section */
+    #services .container {
+        flex-direction: column;
+    }
+    #services .container-texts {
+        margin-bottom: 20px;
+    }
+    #services .image-left img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-#hero .my-image {
-    width: 100%;
-    height: 100%;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    margin: -50px 20px 0px 0px;
-
-
-  
+/* Optimización para dispositivos más pequeños */
+@media (max-width: 576px) {
+    /* Footer */
+    #footer .logo-foot {
+        width: 50px;
+    }
+    #footer .App-name {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -326,10 +415,7 @@ section{
     width: 200px;
     height: 50px;
 }
-#services .texts .callTo-Buttons{
-    height: 100%;
-    width: 100%;
-}
+
 #services .image-app{
     justify-content: flex-end;
 }

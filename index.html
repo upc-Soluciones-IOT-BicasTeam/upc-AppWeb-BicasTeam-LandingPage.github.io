@@ -22,18 +22,14 @@
     <title>MoviGestión - Tu solución para la gestión empresarial</title> <!--Aqui ponemos el titulo de la empresa-->
 </head>
 <body>
-
-<header class="sticky-top" id="header">
-    <nav class="navbar navbar-expand-lg bg-blue navbar-dark">
-        <div class="container-fluid">
+<header class="sticky-top bg-dark" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
             <a class="navbar-brand" href="#header">
-                <!--Aqui ponemos el logo de la empresa en png-->
-                <img src="public/assets/images/App-BranchIcon.png" alt="Navbar-Branch" class="d-inline-block align-text-top">
+                <img src="public/assets/images/App-BranchIcon.png" alt="Navbar-Branch" class="d-inline-block align-text-top" width="35" height="35">
                 MoviGestion
             </a>
-
-
-            <button class="navbar-toggler" type="button"  data-bs-target="#navbarCollapse" data-bs-toggle="collapse" data-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="nav-item nav-link" id="switcher">
@@ -43,47 +39,55 @@
                     <span class="language lang" key="language2">Spanish</span>
                 </div>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <ul class="navbar-nav text-center">
-                    <li><a href="#hero" class="nav-item nav-link active lang" key="navbar-item1">Home</a> </li>
-                    <li> <a href="#about-us" class="nav-item nav-link lang" key="navbar-item2">About Us</a> </li>
-                    <li> <a href="#about-team" class="nav-item nav-link lang" key="navbar-item3">Team</a>    </li>
-                    <li> <a href="#services" class="nav-item nav-link lang" key="navbar-item4">Services</a>  </li>
-                    <li> <a href="#pricing" class="nav-item nav-link lang" key="navbar-item5">Pricing</a>    </li>
-                    <li> <a href="#contact-Us" class="nav-item nav-link lang" key="navbar-item6">Contact Us</a></li>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact-Us" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
-
         </div>
     </nav>
 </header>
+
+
 <main>
-    <section id="hero">
+    <section id="hero" class="py-5">
         <div class="container">
-            <section id="home" class="py-5">
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-1">
-                            <p class="h6 text-uppercase text-primary mb-3 lang" key="titleHero">Welcome to MoviGestion</p>
-                            <h2 class="mb-4 lang" key="subTitleHero">ARE YOU READY TO BOOST YOUR PERFORMANCE</h2>
-                            <p class="text-small text-muted lang" key="subTitleHero2">Evaluate your growth path together with us.</p>
-                            <div class="p-2" ></div>
-                            <span>
-                                 <a href="https://play.google.com/store/apps/details?id=com.example.moviGestion" target="_blank">
-                                    <img class="callTo-Buttons img-fluid" src="public/assets/images/Google_Play_Store_badge.svg" alt="Google Play Store Button">
-                                </a>
-                            </span>
-                        </div>
-                        <div class="col-lg-5 ml-auto mb-4 mb-lg-0 order-1 order-lg-2">
-                            <div class="p-2 "><img class="img-fluid" src="public/assets/images/1.jpg" alt="Hero-Image"></div>
-                        </div>
-                    </div>
+            <!-- Hero principal -->
+            <div class="row align-items-center text-center text-lg-start">
+                <!-- Texto -->
+                <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+                    <p class="h6 text-uppercase text-primary mb-3 lang" key="titleHero">Welcome to MoviGestion</p>
+                    <h2 class="mb-4 lang" key="subTitleHero">ARE YOU READY TO BOOST YOUR PERFORMANCE</h2>
+                    <p class="text-muted lang" key="subTitleHero2">Evaluate your growth path together with us.</p>
+                        <!-- Google Play Store Button -->
+                        <a href="https://play.google.com/store/apps/details?id=com.example.moviGestion" target="_blank">
+                            <img class="callTo-Buttons img-fluid" src="public/assets/images/Google_Play_Store_badge.svg" alt="Google Play Store Button">
+                        </a>
+                        <!-- Descargar APK Button -->
+                        <a href="public/assets/apk/movigestion_mobile.zip" download class="btn btn-primary text-uppercase">
+                            Descargar APK
+                        </a>
+                    
+
                 </div>
-            </section>
-            <div class="container py-5">
-                <div class="card-group">
-                    <div class="card">
-                        <div class="card-body">
+                <!-- Imagen -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="public/assets/images/1.jpg" alt="Hero-Image" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sección de tarjetas -->
+        <div class="container mt-5">
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
                             <h5 class="card-title text-uppercase lang" key="titleCard1">Organize your travel routes</h5>
                             <p class="card-text lang" key="bodyCard1">Visualize your transport routes and manage your vehicle.</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -91,9 +95,11 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="card" id="card-center">
-
-                        <div class="card-body">
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
                             <h5 class="card-title text-uppercase lang" key="titleCard2">Engage your performance with this steps.</h5>
                             <p class="card-text lang" key="bodyCard2">Get information and equipment to help you improve the maintenance of your vehicle.</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -101,11 +107,13 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="card">
-
-                        <div class="card-body" >
-                            <h5 class="card-title text-uppercase lang" key="titleCard3">Be part of our team</h5><p></p>
-                            <p class="card-text lang lang" key="bodyCard3">Join if you are part of Businesses linked to land transport.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-uppercase lang" key="titleCard3">Be part of our team</h5>
+                            <p class="card-text lang" key="bodyCard3">Join if you are part of Businesses linked to land transport.</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                             </svg>
@@ -115,6 +123,8 @@
             </div>
         </div>
     </section>
+    
+    
 
     <section id="about-us">
     
@@ -293,7 +303,7 @@
                         <ul class="list-unstyled mb-4">
                             <li class="lang" key="card2Item1Pricing"><i class="fa-solid fa-circle-check" ></i>Routes</li>
                         </ul>
-                        <button class="btn btn-primary lang" key="cardButtonPricing">Get Started</button>
+                        <button class="btn btn-primary w-100" key="cardButtonPricing">Get Started</button>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
