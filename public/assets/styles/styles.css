@@ -21,6 +21,11 @@ html {
     scroll-behavior: smooth !important;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 ul, nav {
     list-style: none;
 }
@@ -352,13 +357,31 @@ section{
 }
 
 
-.team-member {
+.team-member { /* O .card-effect, o una nueva clase específica si prefieres */
     background-color: white;
-    width: 180px;
-    margin: 100px;
-
+    width: 160px; /* Ajusta este valor al ancho que desees para tus tarjetas */
+    /* min-width: 200px; Podrías usar min-width si quieres que se adapten un poco pero no sean más pequeñas que esto */
+    flex-shrink: 0; /* Importante para que no se encojan si el contenedor es muy pequeño */
 }
 
+/* Opcional: Estilizar la barra de scroll para que sea más sutil (solo Webkit/Blink) */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 
@@ -465,6 +488,13 @@ section{
     width: 300px;
     height: auto;
 
+}
+
+#services .environment{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: #DFE5EF;
 }
 
 /*Pricing styles*/

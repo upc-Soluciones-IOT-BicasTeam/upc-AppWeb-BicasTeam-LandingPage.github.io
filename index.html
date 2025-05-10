@@ -155,7 +155,7 @@
         </div>
     </section>
 
-    <section id="about-team">
+<section id="about-team">
     <div class="container">
         <div class="row mb-5 text-center">
             <div class="col-md-8 mx-auto">
@@ -165,54 +165,96 @@
             </div>
         </div>
 
-        <!-- Distribución centrada y responsiva -->
-        <div class="row justify-content-center text-center g-4">
-            <h1 class="lang" key="subTitleOurTeam">OUR TEAM</h1>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="public/assets/images/Elias.jpg" alt="Elias" class="img-fluid rounded-circle">
+        <div class="row text-center mb-4">
+            <div class="col-12">
+                <h1 class="lang" key="subTitleOurTeam">OUR TEAM</h1>
+            </div>
+        </div>
+
+        <!-- Fila de tarjetas que permite el wrap -->
+        <!-- Eliminamos flex-nowrap y overflow-x-auto -->
+        <!-- Ajustamos las clases de columna para que quepan más, o se distribuyan -->
+        <!-- Con justify-content-center, si la última fila no está llena, las tarjetas se centrarán -->
+        <div class="row justify-content-center g-4">
+            <!-- Tarjeta 1 -->
+            <!-- col-lg-2: 6 tarjetas por fila en pantallas grandes -->
+            <!-- col-md-4: 3 tarjetas por fila en pantallas medianas -->
+            <!-- col-sm-6: 2 tarjetas por fila en pantallas pequeñas -->
+            <!-- col-12: 1 tarjeta por fila en pantallas extra pequeñas -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/Elias.jpg" alt="Elias, Developer" class="img-fluid rounded-circle">
                     <h5 class="mb-0 mt-4">Elias</h5>
                     <p class="lang" key="cardMemberDescription">Developer</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Elias"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Elias"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Elias"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="public/assets/images/piero.png" alt="Piero" class="img-fluid rounded-circle">
+            <!-- Tarjeta 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/piero.png" alt="Piero, Developer" class="img-fluid rounded-circle">
                     <h5 class="mb-0 mt-4">Piero</h5>
                     <p class="lang" key="cardMemberDescription">Developer</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Piero"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Piero"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Piero"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="public/assets/images/Miguel.jpg" alt="Miguel" class="img-fluid rounded-circle">
+            <!-- Tarjeta 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/Miguel.jpg" alt="Miguel, Developer - Group Leader" class="img-fluid rounded-circle">
                     <h5 class="mb-0 mt-4">Miguel</h5>
-                    <p class="lang" key="cardMemberLeaderDescription">Developer - Group Leader</p>
+                    <p class="lang" key="cardMemberLeaderDescription"> Team Leader</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Miguel"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Miguel"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Miguel"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="public/assets/images/Mauricio.png" alt="Mauricio" class="img-fluid rounded-circle">
+            <!-- Tarjeta 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/Mauricio.png" alt="Mauricio, Developer" class="img-fluid rounded-circle">
                     <h5 class="mb-0 mt-4">Mauricio</h5>
                     <p class="lang" key="cardMemberDescription">Developer</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Mauricio"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Mauricio"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Mauricio"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/Moises1.png" alt="Otro Mauricio, Developer" class="img-fluid rounded-circle">
+                    <h5 class="mb-0 mt-4">Moises</h5>
+                    <p class="lang" key="cardMemberDescription">Developer</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Otro Mauricio"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Otro Mauricio"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Otro Mauricio"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="team-member card-effect text-center">
+                    <img src="public/assets/images/Aldhair.png" alt="Un Mauricio más, Developer" class="img-fluid rounded-circle">
+                    <h5 class="mb-0 mt-4">Aldhair</h5>
+                    <p class="lang" key="cardMemberDescription">Developer</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Un Mauricio más"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter de Un Mauricio más"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Un Mauricio más"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -227,6 +269,42 @@
                 <h6 class="text-primary text-uppercase lang" key="titleServices">SERVICES</h6>
                 <h1 class="lang" key="subTitleServices">Our Services</h1>
                 <p class="lang" key="bodyServices">Here are some of the services offered in the app.</p>
+            </div>
+        </div>
+                <div class="environment">
+            <div class="container">
+                <div class="image-left">
+                    <img src="public/assets/images/temp.png" alt="imageService-environment">
+                </div>
+                <div class="container-texts">
+                    <h5 class="text-uppercase lang" key="environmentTitleServices">ENVIRONMENT MONITORING</h5>
+                    <h1 class="lang" key="environmentSubtitleServices">TEMPERATURE & HUMIDITY TRACKING</h1>
+                    <p class="lang" key="environmentBodyServices">Ensure cargo safety and quality</p>
+                    <ul>
+                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature1Services"><span>Departure and arrival times</span></li>
+                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature2Services"><span>Travel program</span></li>
+                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature3Services"><span>Visualize the map</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div class="LOCATION">
+            <div class="container">
+                <div class="container-texts">
+                    <div class="titles">
+                        <h5 class="text-uppercase lang" key="locationTitleServices">LOCATION</h5>
+                        <h1 class="text-uppercase lang" key="locationSubtitleServices">FLEET VISUALIZATION VIA GPS</h1>
+                    </div>
+                    <p class="lang" key="locationBodyServices">Monitor the real-time location of each vehicle</p>
+                    <ul>
+                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature1Services"><span>Make calls to the station</span></li>
+                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature2Services"><span>Notify you of route changes</span></li>
+                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature3Services"><span>Notify you of transport problems</span></li>
+                    </ul>
+                </div>
+                <div class="image-location">
+                    <img src="public/assets/images/ubica.png" alt="locationService-image">
+                </div>
             </div>
         </div>
         <div class="routes">
