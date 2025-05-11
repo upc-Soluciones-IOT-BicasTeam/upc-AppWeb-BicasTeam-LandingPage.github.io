@@ -63,15 +63,17 @@
                     <p class="h6 text-uppercase text-primary mb-3 lang" key="titleHero">Welcome to MoviGestion</p>
                     <h2 class="mb-4 lang" key="subTitleHero">ARE YOU READY TO BOOST YOUR PERFORMANCE</h2>
                     <p class="text-muted lang" key="subTitleHero2">Evaluate your growth path together with us.</p>
-                        <!-- Google Play Store Button -->
-                        <a href="https://play.google.com/store/apps/details?id=com.example.moviGestion" target="_blank">
-                            <img class="callTo-Buttons img-fluid" src="public/assets/images/Google_Play_Store_badge.svg" alt="Google Play Store Button">
-                        </a>
-                        <!-- Descargar APK Button -->
-                        <a href="public/assets/apk/movigestion_mobile.zip" download class="btn btn-primary text-uppercase">
-                            Descargar APK
-                        </a>
-                    
+
+                    <div class="btn-group-custom">
+                      <a href="public/assets/apk/movigestion_mobile.zip" download class="btn btn-download">
+                        Download APK
+                      </a>
+                      <a href="https://upc-opensource-bicasteam.github.io/upc-OpenSource-BicasTeam-AppWeb/login" class="btn btn-started lang" key="cardButtonPricing">
+                        Get Started
+                      </a>
+                    </div>
+
+            
 
                 </div>
                 <!-- Imagen -->
@@ -281,9 +283,15 @@
                     <h1 class="lang" key="environmentSubtitleServices">TEMPERATURE & HUMIDITY TRACKING</h1>
                     <p class="lang" key="environmentBodyServices">Ensure cargo safety and quality</p>
                     <ul>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature1Services"><span>Departure and arrival times</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature2Services"><span>Travel program</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="environmentFeature3Services"><span>Visualize the map</span></li>
+                          <li class="bi bi-arrow-right-circle-fill lang" key="environmentFeature1Services">
+                              Monitor in-vehicle temperature and humidity in real time
+                            </li>
+                            <li class="bi bi-arrow-right-circle-fill lang" key="environmentFeature2Services">
+                              Access historical environmental data for compliance and auditing
+                            </li>
+                            <li class="bi bi-arrow-right-circle-fill lang" key="environmentFeature3Services">
+                              Guarantee optimal conditions for perishable goods or sensitive passengers
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -297,9 +305,9 @@
                     </div>
                     <p class="lang" key="locationBodyServices">Monitor the real-time location of each vehicle</p>
                     <ul>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature1Services"><span>Make calls to the station</span></li>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature2Services"><span>Notify you of route changes</span></li>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="locationFeature3Services"><span>Notify you of transport problems</span></li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="locationFeature1Services">View the exact location of each unit in real time</li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="locationFeature2Services">Receive updates about route changes in real time</li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="locationFeature3Services">Detect anomalies like unexpected stops or route deviations</li>
                     </ul>
                 </div>
                 <div class="image-location">
@@ -317,9 +325,9 @@
                     <h1 class="lang" key="routeSubtitleServices">Route organization</h1>
                     <p class="lang" key="routeBodyServices">Visualize your routes and manage your trips in the best way</p>
                     <ul>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature1Services"><span>Departure and arrival times</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature2Services"><span>Travel program</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature3Services"><span>Visualize the map</span></li>
+                        <li class=" bi bi-arrow-right-circle-fill lang" key="routeFeature1Services">Departure and arrival times</li>
+                        <li class=" bi bi-arrow-right-circle-fill lang" key="routeFeature2Services">Travel program</li>
+                        <li class=" bi bi-arrow-right-circle-fill lang" key="routeFeature3Services">Visualize the map</li>
                     </ul>
                 </div>
             </div>
@@ -333,9 +341,9 @@
                     </div>
                     <p class="lang" key="callsBodyServices">Easily make video calls or send messages to team members</p>
                     <ul>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature1Services"><span>Make calls to the station</span></li>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature2Services"><span>Notify you of route changes</span></li>
-                        <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature3Services"><span>Notify you of transport problems</span></li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="callsFeature1Services">Make calls to the station</li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="callsFeature2Services">Notify you of route changes</li>
+                        <li class=" bi bi-arrow-right-circle-fill lang" key="callsFeature3Services">Notify you of transport problems</li>
                     </ul>
                 </div>
                 <div class="image-calls">
@@ -353,9 +361,9 @@
                     <h1 class="lang" key="maintainSubtitleServices">Vehicle status control</h1>
                     <p class="lang" key="maintainBodyServices">Check the condition of the vehicle and perform maintenance flow</p>
                     <ul>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature1Services"><span>Motor-Fuel</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature2Services"><span>Pneumatics</span></li>
-                        <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature3Services"><span>Electric System</span></li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="maintainFeature1Services">Technical inspection dates</li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="maintainFeature2Services">Pneumatics</li>
+                        <li class="bi bi-arrow-right-circle-fill lang" key="maintainFeature3Services">Electric System</li>
                     </ul>
                 </div>
             </div>

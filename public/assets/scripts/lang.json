@@ -34,6 +34,24 @@
     "titleServices":"Services",
     "subTitleServices": "Our Services",
     "bodyServices": "These are some of the services that will increase the performance of your company.",
+
+    "environmentTitleServices": "ENVIRONMENT MONITORING ",
+    "environmentSubtitleServices": " TEMPERATURE & HUMIDITY TRACKING",
+    "environmentBodyServices": " Ensure cargo safety and quality",
+    "environmentFeature1Services": " Monitor in-vehicle temperature and humidity in real time",
+    "environmentFeature2Services": " Access historical environmental data for compliance and auditing",
+    "environmentFeature3Services": " Guarantee optimal conditions for perishable goods or sensitive passengers",
+
+    "locationTitleServices": " LOCATION",
+    "locationSubtitleServices": "FLEET VISUALIZATION VIA GPS ",
+    "locationBodyServices": " Monitor the real-time location of each vehicle",
+    "locationFeature1Services": "View the exact location of each unit in real time",
+    "locationFeature2Services": " Receive updates about route changes in real time",
+    "locationFeature3Services": " Detect anomalies like unexpected stops or route deviations",
+
+
+
+
     "routeTitleServices": "ROUTES",
     "routeSubtitleServices":"ROUTE ORGANIZATION",
     "routeBodyServices": "View your routes and manage your trips in the best way",
@@ -51,7 +69,7 @@
     "maintainTitleServices": "MAINTENANCE",
     "maintainSubtitleServices": "VEHICULAR STATE CONTROL",
     "maintainBodyServices": "Checks the condition of the vehicle and performs a maintenance flow",
-    "maintainFeature1Services": "Engine - Fuel",
+    "maintainFeature1Services": "Technical inspection dates",
     "maintainFeature2Services": "Tires",
     "maintainFeature3Services": "Electrical System",
 
@@ -123,6 +141,24 @@
     "titleServices":"Servicios",
     "subTitleServices": "Nuestros Servicios",
     "bodyServices": "Estos son algunos de los servicios que Aumentaran el rendimiento de tu empresa.",
+
+
+
+    "environmentTitleServices": "MONITOREO AMBIENTAL",
+    "environmentSubtitleServices": "SEGUIMIENTO DE TEMPERATURA Y HUMEDAD",
+    "environmentBodyServices": "Garantizar la seguridad y la calidad de la carga",
+    "environmentFeature1Services": "Monitorear la temperatura y la humedad del vehículo en tiempo real",
+    "environmentFeature2Services": "Acceder a datos ambientales históricos para cumplimiento normativo y auditoría",
+    "environmentFeature3Services": "Garantizar condiciones óptimas para productos perecederos o pasajeros sensibles",
+
+    "locationTitleServices": "UBICACIÓN",
+    "locationSubtitleServices": "VISUALIZACIÓN DE FLOTA POR GPS",
+    "locationBodyServices": "Monitorear la ubicación de cada vehículo en tiempo real",
+    "locationFeature1Services": "Ver la ubicación exacta de cada unidad en tiempo real",
+    "locationFeature2Services": "Recibir actualizaciones sobre cambios de ruta en tiempo real",
+    "locationFeature3Services": "Detecta anomalías como paradas inesperadas o desviaciones de ruta",
+
+
     "routeTitleServices": "RUTAS",
     "routeSubtitleServices":"ORGANIZACION DE RUTAS",
     "routeBodyServices": "Visualiza tus rutas y gestiona tus viajes de la mejor manera",
@@ -140,7 +176,7 @@
     "maintainTitleServices": "MANTENIMIENTO",
     "maintainSubtitleServices": "CONTROL DEL ESTADO VEHICULAR",
     "maintainBodyServices":"Verifica la condición del vehículo y realiza un flujo de mantenimietno ",
-    "maintainFeature1Services": "Motor - Combustible",
+    "maintainFeature1Services": "fechas de revision tecnica ",
     "maintainFeature2Services": "Neumaticos",
     "maintainFeature3Services": "Sistema Eléctrico",
 

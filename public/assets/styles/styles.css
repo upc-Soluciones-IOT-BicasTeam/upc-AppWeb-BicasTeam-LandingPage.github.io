@@ -3,7 +3,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');/*colocamos los iconos*/
 /*General Common Styles*/
 :root {
-    --primary: rgb(88, 252, 209);
+    --primary: rgb(255, 193, 7);
     --secondary: rgb(12, 238, 178);
     --dark: rgb(33, 37, 47);
     --body: rgb(136, 136, 136);
@@ -17,13 +17,13 @@
 }
 html {
     font: normal 16px sans-serif;
-    color: #07dffd;
+    color: #ffb400;
     scroll-behavior: smooth !important;
 }
 
-html, body {
-    overflow-x: hidden;
-    max-width: 100%;
+body {
+  overflow-x: hidden;   /* sólo ocultas lo que se salga horizontalmente */
+  overflow-y: auto;     /* scroll vertical normal */
 }
 
 ul, nav {
@@ -39,10 +39,10 @@ a:hover {
     opacity: 1;
 }
 a.btn {
-    color: rgb(5, 248, 183);
+    color: rgb(246, 240, 240);
     border-radius: 4px;
     text-transform: uppercase;
-    background-color: #f31d4d;
+    background-color: #21252F;
     font-weight: 800;
     text-align: center;
 }
@@ -63,6 +63,7 @@ section{
     margin-left: 0rem;
 }
 
+/*Header styles*/
 /*Header styles*/
 #header.navbar .container-fluid
 {
@@ -132,32 +133,6 @@ section{
     width: 50px;
     height: 25px;
     transition: 0.3s;
-}
-/* hero section */
-/* Botón Google Play */
-
-/* Ajustes generales de Hero */
-#hero {
-    background-color: #faf8f8;
-    font-family: 'Poppins', sans-serif;
-}
-
-#hero h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-#hero p {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-#hero img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsividad */
@@ -252,11 +227,13 @@ section{
     #header .navbar-nav {
         flex-direction: column;
     }
-    #header .navbar-brand img {
-        margin-bottom: 10px;
-    }
+
     #header .nav-item {
-        margin-bottom: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+    #header .navbar-brand img {
+        margin-bottom: 0.5rem;
     }
 
 
@@ -268,15 +245,18 @@ section{
 
     /* Services Section */
     #services .container {
+        overflow-x: hidden;
         flex-direction: column;
     }
     #services .container-texts {
         margin-bottom: 20px;
     }
     #services .image-left img {
+        overflow-x: hidden;
         width: 100%;
         height: auto;
     }
+
 }
 
 /* Optimización para dispositivos más pequeños */
@@ -288,6 +268,42 @@ section{
     #footer .App-name {
         font-size: 1.2rem;
     }
+}
+
+.btn-group-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.btn-download,
+.btn-started {
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download {
+    background-color: #ffd700;
+}
+
+.btn-started {
+    background-color: #ffc107;
+}
+
+.btn-download:hover,
+.btn-started:hover {
+    transform: scale(1.05);
+    background-color: #ffb400;
+    color: #fff;
 }
 
 
@@ -331,8 +347,8 @@ section{
 #about-team .container .row .team-member .social-icons a{
     width: 34px;
     height: 34px;
-    background-color: var(--primary);
-    border-radius: 2px solid var(--primary);
+    background-color: var(--secondary);
+    border-radius: 2px solid var(--secondary);
     color: var(--dark);
     display: flex;
     justify-content: center;
@@ -340,13 +356,13 @@ section{
     border-radius: 100px;
     margin-left: 5px;
     transition: all 0.4s ease;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--secondary);
 }
 
 .social-icons a:hover {
-    color: var(--primary);
+    color: var(--secondary);
     background-color: transparent;
-    border-color: var(--primary);
+    border-color: var(--secondary);
 }
 #about-team .embed-responsive {
     display: flex;
@@ -481,7 +497,6 @@ section{
     padding-bottom: .5rem;
 }
 #services .calls .container .container-texts{
-    width: 500px;
 }
 #services .calls .container .image-calls img{
     padding: 1rem;
