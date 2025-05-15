@@ -134,7 +134,224 @@ section{
     height: 25px;
     transition: 0.3s;
 }
+.nav-item .btn {
+    color: white; /* Color del texto */
 
+    transition: background-color 0.3s; /* Efecto de transición */
+     border-color: rgb(33, 37, 47);
+}
+
+.nav-item .btn:hover {
+    background-color:rgb(255, 193, 7); /* Color de fondo al pasar el mouse */
+}
+
+/* No code was selected, so I will provide a general improvement to the CSS code */
+
+/* Improved CSS code with better organization and consistency */
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #ffb400;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Header Styles */
+
+#header {
+    background-color: #21252f;
+    border-bottom: 1px solid rgb(33, 37, 47);
+    position: sticky;
+    box-shadow: var(--box-shadow);
+}
+
+#header .navbar-brand {
+    font-size: 25px;
+    padding-left: 3rem;
+}
+
+#header .language {
+    padding-left: 7rem;
+}
+
+#header .form-switch {
+    display: flex;
+}
+
+#header .nav-item span {
+    padding-left: 1px;
+    padding-right: 3rem;
+    color: #ffffff;
+}
+
+/* Hero Section Styles */
+
+#hero {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+#hero .callTo-Buttons {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#hero .callTo-Buttons:hover {
+    transform: scale(1.05);
+}
+
+/* About Us Styles */
+
+#about-us {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+#Us .container .row ul li span {
+    padding-left: 1rem;
+}
+
+#Us .container .row ul li span::before {
+    padding-left: 1rem;
+}
+
+#Us .container .row ul li span::after {
+    padding-left: 1rem;
+}
+
+/* Services Styles */
+
+#services {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+#services .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#services h5 {
+    text-transform: uppercase;
+    size-adjust: auto;
+    color: rgb(136, 136, 136);
+}
+
+#services p {
+    color: rgb(136, 136, 136);
+}
+
+#services li {
+    color: rgb(136, 136, 136);
+}
+
+/* Pricing Styles */
+
+#pricing {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+#pricing i {
+    font-size: 20px;
+    color: rgb(33, 37, 47);
+}
+
+#pricing ul li {
+    margin-top: 8px;
+}
+
+/* Contact Styles */
+
+#contact-Us {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+#contact-Us .container form .col-md-10 button {
+    height: 50px;
+    border-color: rgb(36, 41, 51);
+    color: rgb(246, 240, 240);
+    background-color: rgb(33, 37, 47);
+}
+
+#contact-Us .container form .col-md-10 button:hover {
+    background-color: rgb(48, 56, 65);
+}
+
+/* Footer Styles */
+
+#footer {
+    padding-top: 5rem;
+}
+
+#footer .footer-top {
+    color: var(--body);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: var(--dark);
+}
+
+#footer .footer-top a {
+    color: var(--body);
+}
+
+#footer .footer-top a:hover {
+    color: var(--white);
+}
+
+#footer .footer-bottom {
+    color: var(--body);
+    background-color: rgba(33, 37, 47, 0.97);
+}
+
+#footer .logo-foot {
+    width: 15%;
+}
+
+#footer .App-name {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#footer .social-icons a {
+    padding-left: 1rem;
+}
 /* Responsividad */
 /* Ajuste específico para pantallas pequeñas */
 @media (max-width: 576px) {
@@ -356,7 +573,6 @@ section{
     border-radius: 100px;
     margin-left: 5px;
     transition: all 0.4s ease;
-    border: 2px solid var(--secondary);
 }
 
 .social-icons a:hover {
@@ -378,6 +594,7 @@ section{
     width: 160px; /* Ajusta este valor al ancho que desees para tus tarjetas */
     /* min-width: 200px; Podrías usar min-width si quieres que se adapten un poco pero no sean más pequeñas que esto */
     flex-shrink: 0; /* Importante para que no se encojan si el contenedor es muy pequeño */
+
 }
 
 /* Opcional: Estilizar la barra de scroll para que sea más sutil (solo Webkit/Blink) */
