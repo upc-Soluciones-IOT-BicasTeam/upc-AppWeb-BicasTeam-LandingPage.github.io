@@ -59,7 +59,7 @@ section{
 }
 /*Footer styles*/
 #footer{
-    padding-top: 5rem;
+    padding-top: 5rem; /* Espaciado superior para separar del contenido principal */
 }
 #footer .footer-top {
     color:var(--body);
@@ -90,4 +90,14 @@ section{
 }
 #footer .social-icons a{
     padding-left: 1rem;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+#footer .social-icons a:hover {
+    color: var(--primary); /* Usar el color primario al hacer hover */
+}
+
+#footer a:focus {
+    outline: 2px solid var(--primary); /* Mejorar visibilidad para navegación con teclado */
+    outline-offset: 2px;
 }
